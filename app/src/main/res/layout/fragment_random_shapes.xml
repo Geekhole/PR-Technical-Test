@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <uk.geekhole.popreach.views.RandomShapeView
+            android:id="@+id/shape_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/create_square"
+            android:layout_width="@dimen/width_height_shape_icons"
+            android:layout_height="@dimen/width_height_shape_icons"
+            android:background="@drawable/icn_square"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/create_circle"
+            android:layout_width="@dimen/width_height_shape_icons"
+            android:layout_height="@dimen/width_height_shape_icons"
+            android:background="@drawable/icn_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/create_square" />
+
+        <Button
+            android:id="@+id/create_triangle"
+            android:layout_width="@dimen/width_height_shape_icons"
+            android:layout_height="@dimen/width_height_shape_icons"
+            android:background="@drawable/icn_triangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/create_circle" />
+
+        <Button
+            android:id="@+id/undo"
+            android:layout_width="@dimen/width_height_shape_icons"
+            android:layout_height="@dimen/width_height_shape_icons"
+            android:background="@drawable/icn_undo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/create_triangle" />
+
+        <Button
+            android:id="@+id/stats"
+            android:layout_width="@dimen/width_height_shape_icons"
+            android:layout_height="@dimen/width_height_shape_icons"
+            android:background="@drawable/icn_stats"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/undo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
